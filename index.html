@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon site frontend</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>MonSite</h1>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Changer le thème">🌙</button>
+        <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#features">Fonctionnalités</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Construire un site moderne</h2>
+      <p>Un site responsive, propre et agréable à utiliser.</p>
+      <a href="#contact" class="btn">Commencer</a>
+    </section>
+
+    <section id="about">
+      <h2>À propos</h2>
+      <p>Présentation rapide du site, du projet ou du service.</p>
+    </section>
+
+    <section id="features">
+      <h2>Fonctionnalités</h2>
+      <div class="cards" id="features-list"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Nom</label>
+        <input id="name" name="name" type="text" placeholder="Votre nom" />
+      
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Votre email" />
+      
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Votre message"></textarea>
+      
+        <p id="form-message" class="form-message"></p>
+      
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 MonSite. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
